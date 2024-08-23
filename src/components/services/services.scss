@@ -38,6 +38,11 @@
     color: #ffffff;
     margin-bottom: 27px;
   }
+  @media (max-width: 768px) {
+    .textContainer h1 {
+      font-size: 35px;
+    }
+  }
 
   .textContainer p {
     font-size: 20.2px;
@@ -45,6 +50,12 @@
     line-height: 1.6;
     max-width: 880px;
   }
+  @media (max-width: 768px) {
+    .textContainer p {
+      font-size: 16px;
+    }
+  }
+
   .technologiesContainer {
     display: flex;
     flex-direction: column;
@@ -70,5 +81,10 @@
     font-size: 25px;
     color: #bbfaf9;
     margin-bottom: 10px;
+  }
+  @media (max-width: 768px) {
+    .technologiesContainer h2 {
+      font-size: 20px;
+    }
   }
 }
