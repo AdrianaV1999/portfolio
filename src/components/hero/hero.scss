@@ -1,0 +1,165 @@
+@import "../../app.scss";
+
+.hero {
+  overflow: hidden;
+  background: linear-gradient(180deg, #4d25ff, #ba6bff);
+  position: relative;
+  height: calc(100vh - 80px);
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: -15px auto;
+    position: relative;
+    z-index: 10;
+    .imageContainer {
+      position: absolute;
+      width: 40.6%;
+      display: flex;
+      right: -175px;
+      align-items: center;
+      padding: 0;
+      margin: 0 auto;
+      border: none;
+    }
+
+    @media (max-width: 1450px) {
+      .imageContainer {
+        position: absolute;
+        width: 38%;
+        display: flex;
+        right: 0px;
+        align-items: center;
+        padding: 0;
+        margin: 0 auto;
+        border: none;
+      }
+      @include mobile {
+        .wrapper {
+          height: 30%;
+          margin: auto;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .imageContainer {
+          width: 45%;
+          max-width: 300px;
+          height: auto;
+          margin: 0 auto;
+          margin-bottom: 512px;
+          left: 48px;
+          z-index: 20;
+        }
+      }
+    }
+
+    .imageContainer img {
+      width: 66%;
+      object-fit: contain;
+      border: none;
+      margin-top: -3px;
+    }
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      z-index: 5;
+      margin-top: -18px;
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h2 {
+        width: 85.2%;
+        font-size: 20.3px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.57px;
+        font-weight: 400;
+        margin-bottom: 23px;
+      }
+
+      @media (max-width: 768px) {
+        h2 {
+          font-size: 16px;
+        }
+      }
+
+      h1 {
+        font-size: 78.5px;
+        color: rgb(255, 255, 255);
+
+        @include mobile {
+          font-size: 30px;
+          margin-bottom: 9px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: fit-content;
+        }
+      }
+
+      .buttons {
+        position: relative;
+        z-index: 10;
+
+        button {
+          background: transparent;
+          border: 1.5px solid white;
+          border-radius: 10px;
+          padding: 12px;
+          width: 123px;
+          cursor: pointer;
+          color: white;
+          font-size: 18px;
+          font-weight: 530;
+
+          margin-right: 14px;
+        }
+
+        @media (max-width: 768px) {
+          button {
+            padding: 9px;
+            font-size: 15px;
+            margin-right: 10px;
+          }
+        }
+        button:hover {
+          background-color: rgb(255, 255, 255);
+          border-color: pink;
+          color: purple;
+        }
+      }
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+  }
+}

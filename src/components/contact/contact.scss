@@ -1,0 +1,156 @@
+@import "../../app.scss";
+
+.contact {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    width: 200vw;
+    height: 100%;
+    background: linear-gradient(180deg, #5c37ff, #bb6dff);
+    z-index: -1;
+  }
+
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 230px;
+    position: relative;
+
+    h1 {
+      font-size: 76px;
+      line-height: 88px;
+      color: white;
+      width: 65.6%;
+    }
+
+    h2 {
+      color: #ffdbfa;
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .formContainer {
+    flex: 1;
+    position: relative;
+    margin-top: 230px;
+
+    .phoneSvg {
+      position: absolute;
+      z-index: -1;
+      margin-left: 130px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input,
+      textarea {
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+
+        &::placeholder {
+          color: #f4e7ff;
+          opacity: 1;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: #dfbaff;
+          box-shadow: 0 0 5px #cf99ff;
+        }
+      }
+
+      button {
+        border: 1.5px solid white;
+        border-radius: 12px;
+        padding: 20px;
+        border: none;
+        color: white;
+        background-color: rgb(255, 255, 255);
+        border-color: pink;
+        color: purple;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+
+        &:hover {
+          background-color: #ffdbfa;
+          color: purple;
+        }
+      }
+    }
+  }
+  @media (max-width: 1450px) {
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .textContainer,
+      .formContainer {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      .phoneSvg {
+        margin-left: 0;
+        width: 50%;
+        position: relative;
+      }
+
+      .textContainer h1 {
+        font-size: 30px;
+        margin-left: 12px;
+        white-space: nowrap;
+      }
+
+      .textContainer h2 {
+        margin-left: 12px;
+      }
+      .textContainer p {
+        margin-left: 12px;
+        margin-bottom: -26px;
+      }
+
+      .formContainer {
+        padding: 20px;
+        margin-bottom: 400px;
+        margin-left: -15px;
+
+        form {
+          gap: 15px;
+
+          input,
+          textarea {
+            padding: 10px;
+          }
+
+          button {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

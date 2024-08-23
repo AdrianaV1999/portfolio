@@ -1,0 +1,249 @@
+@import "../../app.scss";
+
+.portfolio {
+  position: relative;
+  background: #ffffff;
+  width: 100%;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 36px;
+
+    @include mobile {
+      position: relative;
+      font-size: 24px;
+    }
+    h1 {
+      background: linear-gradient(to right, #5b50f1, #665deb);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 61.5px;
+    }
+    @media (max-width: 768px) {
+      @include mobile {
+        h1 {
+          font-size: 43.5px;
+          text-align: center;
+        }
+      }
+    }
+    .progressBar {
+      height: 10px;
+      background: linear-gradient(to right, #7050ff, #7758ff, #b45dff);
+    }
+  }
+
+  .single {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .imageContainer {
+      flex: 1;
+      height: 50%;
+
+      @include mobile {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16.5px;
+
+        @include mobile {
+          object-fit: contain;
+          border-radius: 15px;
+        }
+      }
+
+      video {
+        margin-top: 60px;
+        width: 100%;
+        height: 78%;
+        object-fit: cover;
+        border-radius: 15px;
+
+        @include mobile {
+          margin-top: 0px;
+
+          object-fit: contain;
+          border-radius: 10px;
+          margin-top: 20px;
+          width: 96%;
+          height: 108%;
+        }
+      }
+    }
+
+    .textContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin: 20px;
+
+      @include mobile {
+        transform: none !important;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h3 {
+        display: inline-block;
+        background: linear-gradient(to right, #5b50f1, #665deb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 61.5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      h2 {
+        font-size: 42px;
+        color: #4732a3;
+        letter-spacing: 0.4px;
+        margin-bottom: -13px;
+
+        @include mobile {
+          font-size: 36px;
+        }
+      }
+
+      p {
+        color: #4732a3;
+        font-size: 18px;
+        letter-spacing: 0.37px;
+        margin-bottom: 5px;
+
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+
+      button {
+        background: linear-gradient(to left, #5d39ff, #a43bff);
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        padding: 10px;
+        width: 176px;
+        cursor: pointer;
+        color: white;
+
+        @include mobile {
+          font-size: 15px;
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.modalVideo {
+  max-width: 75%;
+  max-height: 75%;
+  border-radius: 15px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.modalMobile {
+  width: 112px;
+  height: 212px;
+  border-radius: 50px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: -14px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.single {
+  background-color: #ff3d3d;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-style-7 {
+  width: 99%;
+  height: 79%;
+  object-fit: contain;
+  border-radius: 15px;
+}

@@ -1,0 +1,74 @@
+.heroo {
+  height: calc(100vh - 0px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #bb6dff, #9c2bff, #7354ff, #7252ff);
+
+  text-align: center;
+  padding: 0 20px;
+
+  .wrapper {
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageContainer {
+    margin-bottom: 13px;
+  }
+
+  .imageContainer img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .textContainer {
+    margin-bottom: 40px;
+  }
+
+  .textContainer h1 {
+    font-size: 55px;
+    color: #ffffff;
+    margin-bottom: 27px;
+  }
+
+  .textContainer p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    max-width: 800px;
+  }
+  .technologiesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      align-items: center;
+      margin-right: 7px;
+    }
+
+    .icons svg {
+      font-size: 40px;
+      color: whitesmoke;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .technologiesContainer h2 {
+    font-size: 24px;
+    color: #bbfaf9;
+    margin-bottom: 10px;
+  }
+}

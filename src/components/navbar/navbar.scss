@@ -1,0 +1,127 @@
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: #451bff;
+  position: relative;
+  overflow: visible;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  margin: auto;
+  position: relative;
+  padding: 20px 0;
+  .logo {
+    color: rgb(255, 255, 255);
+    font-size: 31px;
+    font-weight: bold;
+    position: absolute;
+  }
+  @media (min-width: 750px) and (max-width: 1450px) {
+    .logo {
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      font-weight: bold;
+      position: absolute;
+      left: -20px;
+    }
+  }
+  h3 {
+    font-family: "Sail";
+    background: linear-gradient(to right, #9ef7ff, #f7d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 39px;
+    margin-left: -30px;
+    padding: 25px;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  right: 0;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17.8px;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: #fce4ff;
+  transform: scale(1.1);
+}
+
+.sidebar-toggle {
+  background-color: rgb(199, 139, 255);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgb(220, 219, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease;
+  z-index: 999;
+  border-left: 2px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar a {
+  color: #5900a1;
+  text-decoration: none;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px #322d7a;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 15px;
+  padding: 14px;
+}
+
+.sidebar a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #512aff;
+  border-radius: 15px;
+  padding: 14px;
+}
+
+.sidebar a:last-child {
+  border-bottom: none;
+}
