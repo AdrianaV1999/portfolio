@@ -88,10 +88,12 @@ const containerStyle = {
   6: {
     border: "2px solid #ebfcff",
     height: "82%",
+    marginTop: "45px",
   },
   2: {
     border: "2px solid #ebfcff",
     height: "82%",
+    marginTop: "45px",
   },
 };
 const gradientTextStyle = {
