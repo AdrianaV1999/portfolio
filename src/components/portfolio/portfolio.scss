@@ -215,6 +215,12 @@
   display: block;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .modalVideo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
 
 .modalMobile {
   width: 112px;

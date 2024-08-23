@@ -32,7 +32,7 @@ const items = [
     id: 4,
     title: "Tech Shop App",
     img: TechnologyApp,
-    desc: "The Technology Store App features a sleek and minimalist design that ensures the focus remains on the products. Utilizing a calming palette of light blue and white, the app provides a clean and distraction-free browsing experience. The intuitive layout and subtle color scheme enhance usability, allowing users to easily explore and shop for technology products without unnecessary visual clutter.",
+    desc: "The Technology Store App features a sleek and minimalist design that ensures the focus remains on the products. Utilizing a calming palette of light blue and soft white, the app provides a clean  and distraction-free browsing experience. The intuitive layout and subtle color scheme enhance usability, allowing users to easily explore and shop for technology products without unnecessary visual clutter.",
   },
   {
     id: 5,
@@ -88,12 +88,18 @@ const containerStyle = {
   6: {
     border: "2px solid #ebfcff",
     height: "82%",
-    marginTop: "45px",
+    marginTop: "43px",
   },
   2: {
     border: "2px solid #ebfcff",
     height: "82%",
-    marginTop: "45px",
+    marginTop: "44.5px",
+  },
+  7: {
+    marginTop: "50px",
+  },
+  8: {
+    marginTop: "50px",
   },
 };
 const gradientTextStyle = {
