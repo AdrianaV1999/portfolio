@@ -24,7 +24,7 @@ section {
   height: 100vh;
   width: 100%;
   scroll-snap-align: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 @mixin mobile {

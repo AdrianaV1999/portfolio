@@ -1,10 +1,10 @@
 @import "../../app.scss";
 
 .hero {
-  overflow: hidden;
   background: linear-gradient(180deg, #4d25ff, #ba6bff);
   position: relative;
   height: calc(100vh - 80px);
+  overflow: hidden;
 
   .wrapper {
     max-width: 1366px;
@@ -12,6 +12,7 @@
     margin: -15px auto;
     position: relative;
     z-index: 10;
+
     .imageContainer {
       position: absolute;
       width: 40.6%;
