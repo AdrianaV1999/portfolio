@@ -66,6 +66,17 @@ const Contact = () => {
         }
       );
   };
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="contact">
@@ -89,16 +100,20 @@ const Contact = () => {
           {showImage && (
             <motion.div
               className="phoneSvg"
-              initial={{ opacity: 0, y: -50 }} // samo animacija transparentnosti i vertikalnog pomaka
+              initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2 }}
               exit={{ opacity: 0, y: 50 }}
-              style={{ width: "78%", height: "auto", marginLeft: "130px" }} // fiksni stilovi
+              style={{
+                width: "78%",
+                height: "auto",
+                marginLeft: isMobile ? "70px" : "135px",
+              }}
             >
               <img
                 src={Contact1}
                 alt="Description of image"
-                style={{ width: "100%", height: "100%" }}
+                style={{ width: "80%", height: "80%" }}
               />
             </motion.div>
           )}{" "}

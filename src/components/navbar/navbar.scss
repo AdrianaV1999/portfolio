@@ -20,14 +20,12 @@
     font-size: 31px;
     font-weight: bold;
     position: absolute;
-  }
-  @media (min-width: 750px) and (max-width: 1450px) {
-    .logo {
+    @media (min-width: 750px) and (max-width: 1450px) {
       color: rgb(255, 255, 255);
       font-size: 30px;
       font-weight: bold;
-      position: absolute;
-      left: -20px;
+      position: relative;
+      margin-left: -20px;
     }
   }
   h3 {
@@ -44,7 +42,7 @@
   @media (max-width: 750px) {
     h3 {
       font-size: 30.5px;
-      margin-left: -15px;
+      margin-left: -22px;
     }
   }
 }

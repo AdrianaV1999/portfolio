@@ -19,7 +19,6 @@
     z-index: 1;
     height: 100%;
   }
-
   .textContainer {
     flex: 1;
     display: flex;
@@ -116,29 +115,28 @@
       }
 
       .phoneSvg {
-        margin-left: 0;
         width: 50%;
         position: relative;
       }
 
       .textContainer h1 {
         font-size: 30px;
-        margin-left: 12px;
+        margin-left: 23px;
         white-space: nowrap;
       }
 
       .textContainer h2 {
-        margin-left: 12px;
+        margin-left: 23px;
       }
       .textContainer p {
-        margin-left: 12px;
+        margin-left: 23px;
         margin-bottom: -26px;
       }
 
       .formContainer {
         padding: 20px;
         margin-bottom: 400px;
-        margin-left: -15px;
+        margin-left: 0px;
 
         form {
           gap: 15px;
