@@ -107,7 +107,7 @@ const Contact = () => {
               style={{
                 width: "78%",
                 height: "auto",
-                marginLeft: isMobile ? "80px" : "135px",
+                marginLeft: isMobile ? "65px" : "135px",
               }}
             >
               <img
