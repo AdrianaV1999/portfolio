@@ -105,9 +105,11 @@ const Contact = () => {
               transition={{ duration: 2 }}
               exit={{ opacity: 0, y: 50 }}
               style={{
-                width: "78%",
-                height: "auto",
-                marginLeft: isMobile ? "65px" : "135px",
+                marginLeft: isMobile ? "0" : "135px",
+                marginRight: isMobile ? "0" : "0",
+                display: isMobile ? "block" : "inline-block",
+                textAlign: isMobile ? "center" : "left",
+                width: isMobile ? "100%" : "auto",
               }}
             >
               <img
