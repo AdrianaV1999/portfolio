@@ -1,24 +1,23 @@
 @import "../../app.scss";
 
 .contact {
-  height: 100%;
-  max-width: 1366px;
-  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #5c37ff, #bb6dff);
   display: flex;
   align-items: flex-start;
-  gap: 50px;
+  justify-content: center;
   position: relative;
-  z-index: 1;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50vw;
-    width: 200vw;
+  .contactContent {
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    position: relative;
+    z-index: 1;
     height: 100%;
-    background: linear-gradient(180deg, #5c37ff, #bb6dff);
-    z-index: -1;
   }
 
   .textContainer {
@@ -101,11 +100,14 @@
       }
     }
   }
+
   @media (max-width: 1450px) {
     @include mobile {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      .contactContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
 
       .textContainer,
       .formContainer {

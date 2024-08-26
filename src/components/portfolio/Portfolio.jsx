@@ -87,30 +87,19 @@ const items = [
 const containerStyle = {
   6: {
     border: "2px solid #ebfcff",
-    height: "82%",
-    marginTop: "43px",
+    height: "80%",
+    marginTop: "10px",
   },
+
   2: {
     border: "2px solid #ebfcff",
-    height: "82%",
-    marginTop: "44.5px",
+    marginTop: "30px",
   },
-  7: {
-    marginTop: "50px",
-  },
-  8: {
-    marginTop: "50px",
-  },
+  7: { marginTop: "33px" },
+  8: { marginTop: "33px" },
+  4: { marginTop: "-30px" },
 };
-const gradientTextStyle = {
-  display: "inline-block",
-  background: "linear-gradient(to right,   #5B50F1, #665DEB)",
-  WebkitBackgroundClip: "text",
-  backgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  textFillColor: "transparent",
-  fontSize: "61.5px",
-};
+
 const Single = ({ item }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const videoRef = useRef();

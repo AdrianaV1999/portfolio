@@ -68,63 +68,64 @@ const Contact = () => {
   };
 
   return (
-    <div ref={ref} className="contact">
-      <div className="textContainer">
-        <h1>
-          Contact me via{" "}
-          <b>
-            <span style={{ color: "#BBFAF9", fontWeight: "900" }}>email</span>
-          </b>
-        </h1>
-        <div className="item">
-          <h2>Mail</h2>
-
-          <p>
-            <span style={{ color: "#ffffff" }}>adrianav12899@gmail.com</span>
-          </p>
+    <div className="contact">
+      <div ref={ref} className="contactContent">
+        <div className="textContainer">
+          <h1>
+            Contact me via{" "}
+            <b>
+              <span style={{ color: "#BBFAF9", fontWeight: "900" }}>email</span>
+            </b>
+          </h1>
+          <div className="item">
+            <h2>Mail</h2>
+            <p>
+              <span style={{ color: "#ffffff" }}>adrianav12899@gmail.com</span>
+            </p>
+          </div>
+          <div className="item"></div>
         </div>
-        <div className="item"></div>
-      </div>
-      <div className="formContainer">
-        {showImage && (
-          <motion.div
-            className="phoneSvg"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}
-            exit={{ opacity: 0, y: 50 }}
-          >
-            <img
-              src={Contact1}
-              alt="Description of image"
-              style={{ width: "78%", height: "auto" }}
-            />
-          </motion.div>
-        )}
+        <div className="formContainer">
+          {showImage && (
+            <motion.div
+              className="phoneSvg"
+              initial={{ opacity: 0, y: -50 }} // samo animacija transparentnosti i vertikalnog pomaka
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2 }}
+              exit={{ opacity: 0, y: 50 }}
+              style={{ width: "78%", height: "auto", marginLeft: "130px" }} // fiksni stilovi
+            >
+              <img
+                src={Contact1}
+                alt="Description of image"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </motion.div>
+          )}{" "}
+          {showForm && (
+            <motion.form
+              ref={formRef}
+              onSubmit={sendEmail}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <input type="text" required placeholder="Name" name="name" />
+              <input type="email" required placeholder="Email" name="email" />
+              <textarea rows={8} placeholder="Message" name="message" />
+              <button>Submit</button>
+              {!error && !success && (
+                <p style={style}>
+                  Please contact me directly at adrianav12899@gmail.com or
+                  through this form.
+                </p>
+              )}
 
-        {showForm && (
-          <motion.form
-            ref={formRef}
-            onSubmit={sendEmail}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <input type="text" required placeholder="Name" name="name" />
-            <input type="email" required placeholder="Email" name="email" />
-            <textarea rows={8} placeholder="Message" name="message" />
-            <button>Submit</button>
-            {!error && !success && (
-              <p style={style}>
-                Please contact me directly at adrianav12899@gmail.com or through
-                this form.
-              </p>
-            )}
-
-            {error && <p style={style}>Error sending email</p>}
-            {success && <p style={style}>Email successfully sent</p>}
-          </motion.form>
-        )}
+              {error && <p style={style}>Error sending email</p>}
+              {success && <p style={style}>Email successfully sent</p>}
+            </motion.form>
+          )}
+        </div>
       </div>
     </div>
   );

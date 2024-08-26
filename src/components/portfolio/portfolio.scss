@@ -12,12 +12,15 @@
     padding-top: 50px;
     text-align: center;
     font-size: 36px;
-
+    @media (max-width: 1450px) {
+      position: relative;
+    }
     @include mobile {
       font-size: 24px;
       position: relative;
       bottom: 0;
     }
+
     h1 {
       background: linear-gradient(to right, #5b50f1, #665deb);
       -webkit-background-clip: text;
@@ -25,6 +28,7 @@
       -webkit-text-fill-color: transparent;
       font-size: 61.5px;
     }
+
     @media (max-width: 768px) {
       @include mobile {
         h1 {
@@ -33,6 +37,7 @@
         }
       }
     }
+
     .progressBar {
       height: 10px;
       background: linear-gradient(to right, #7050ff, #7758ff, #b45dff);
@@ -61,7 +66,7 @@
     height: 100%;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 50px;
 
@@ -73,9 +78,14 @@
       flex: 1;
       width: 100%;
       height: auto;
-
+      position: relative;
+      padding-top: 250px;
+      @media (max-height: 550px) {
+        padding-top: 235px;
+      }
       @include mobile {
         width: 100%;
+        padding-top: 90px;
       }
 
       img {
@@ -83,11 +93,14 @@
         height: auto;
         object-fit: cover;
         border-radius: 16.5px;
+        position: relative;
+        top: 10px;
+        justify-content: center;
 
         @include mobile {
           object-fit: contain;
           border-radius: 15px;
-          margin-top: 60px;
+          margin-top: 0px;
         }
       }
 
@@ -101,9 +114,7 @@
         @include mobile {
           object-fit: contain;
           border-radius: 10px;
-          margin-top: 37px;
-          margin-left: 8.3px;
-          width: 96%;
+          width: 100%;
           height: 108%;
         }
       }
@@ -115,12 +126,21 @@
       flex-direction: column;
       gap: 30px;
       margin: 20px;
+      position: relative;
+      padding-top: 535px;
+      @media (max-height: 550px) {
+        padding-top: 100px;
+        margin: 10px;
+        position: sticky;
+        min-height: 100vh;
+      }
 
       @include mobile {
         transform: none !important;
         padding: 10px;
         align-items: center;
         text-align: center;
+        padding-top: 0px;
       }
 
       h3 {
@@ -133,6 +153,9 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        position: relative;
+        top: -20px;
+        right: 30px;
       }
 
       h2 {
@@ -216,6 +239,7 @@
   display: block;
   margin: auto;
 }
+
 @media (max-width: 768px) {
   .modalVideo {
     max-width: 100%;

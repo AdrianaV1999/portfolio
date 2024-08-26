@@ -3,15 +3,18 @@
 .hero {
   background: linear-gradient(180deg, #4d25ff, #ba6bff);
   position: relative;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   overflow: hidden;
 
   .wrapper {
     max-width: 1366px;
     height: 100%;
-    margin: -15px auto;
+    margin: 273px auto;
     position: relative;
     z-index: 10;
+    @media (max-width: 768px) {
+      margin: 350px auto;
+    }
 
     .imageContainer {
       position: absolute;
@@ -149,12 +152,13 @@
   .slidingTextContainer {
     position: absolute;
     font-size: 50vh;
-    bottom: -120px;
+    bottom: -435px;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
     z-index: 1;
+    overflow: visible;
   }
 }
 
