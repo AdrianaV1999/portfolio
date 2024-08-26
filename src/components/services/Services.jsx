@@ -56,7 +56,7 @@ const Hero = () => {
 
   return (
     <div className="heroo">
-      <div className="wrapper">
+      <div className="wrapperr">
         <div
           className="imageContainer"
           ref={imageRef}
