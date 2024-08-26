@@ -159,6 +159,11 @@
     font-weight: bold;
     z-index: 1;
     overflow: visible;
+    @media (max-width: 768px) {
+      bottom: -300px;
+
+      font-size: 32vh;
+    }
   }
 }
 

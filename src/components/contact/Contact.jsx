@@ -105,17 +105,20 @@ const Contact = () => {
               transition={{ duration: 2 }}
               exit={{ opacity: 0, y: 50 }}
               style={{
-                marginLeft: isMobile ? "0" : "135px",
-                marginRight: isMobile ? "0" : "0",
+                marginLeft: isMobile ? "auto" : "130px",
+                marginRight: isMobile ? "auto" : "0",
                 display: isMobile ? "block" : "inline-block",
                 textAlign: isMobile ? "center" : "left",
-                width: isMobile ? "100%" : "auto",
+                minWidth: isMobile ? "100%" : "auto",
               }}
             >
               <img
                 src={Contact1}
                 alt="Description of image"
-                style={{ width: "80%", height: "80%" }}
+                style={{
+                  width: isMobile ? "50%" : "78%",
+                  height: isMobile ? "50%" : "78%",
+                }}
               />
             </motion.div>
           )}{" "}
