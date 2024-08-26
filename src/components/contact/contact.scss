@@ -8,6 +8,9 @@
   align-items: flex-start;
   justify-content: center;
   position: relative;
+  @media (max-width: 1450px) {
+    padding: 20px;
+  }
 
   .contactContent {
     max-width: 1366px;
@@ -121,23 +124,16 @@
 
       .textContainer h1 {
         font-size: 30px;
-        margin-left: 23px;
         white-space: nowrap;
       }
 
-      .textContainer h2 {
-        margin-left: 23px;
-      }
       .textContainer p {
-        margin-left: 23px;
         margin-bottom: -26px;
       }
 
       .formContainer {
-        padding: 20px;
-        margin-bottom: 400px;
         margin-left: 0px;
-
+        padding-bottom: 0px;
         form {
           gap: 15px;
 
