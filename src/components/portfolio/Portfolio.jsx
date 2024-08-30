@@ -7,19 +7,20 @@ import VideoGame from "./VideoGame.png";
 import Seoul from "./Seoul.mp4";
 import DigitalArt from "./digitalart.png";
 import SoftwareCompany from "./SoftwareCompany.mp4";
-import Converse from "./Converse.png";
+import Converse from "./ConverseAllStar.png";
 import CakeShop from "./CakeShop.mp4";
 import TechnologyApp from "./TechnologyApp.png";
 import PetShopApp from "./PetShopApp.png";
 import MusicApp from "./MusicApp.png";
-import IceCream from "./IceCream.mp4";
+import WeatherApp from "./WeatherApp.png";
+import Fashion from "./Fashion.png";
 
 const items = [
   {
     id: 1,
     title: "Healthcare App",
     img: HealthcareImage,
-    desc: "The Healthcare App is designed with a clean and modern aesthetic, utilizing a calming palette of blue shades paired with white to create a user-friendly interface. The design strategically highlights key functionalities, making them easily accessible and noticeable for users. Custom icons are used to represent dietary elements, while vector illustrations of doctors and patients provide a professional yet approachable visual experience. This design not only enhances usability but also aligns with the healthcare industry’s emphasis on trust and care.",
+    desc: "The Healthcare App is designed with a clean and modern aesthetic, utilizing a calming palette of blue shades paired with white to create user-friendly interface. The design strategically highlights key functionalities, making them easily accessible and noticeable for users. Custom icons are used to represent dietary elements, while vector illustrations of doctors and patients provide a professional yet approachable visual experience. The consistent use of blue and white throughout the app not only enhances readability but also aligns with the healthcare industry’s emphasis on trust and care.",
   },
 
   {
@@ -39,6 +40,12 @@ const items = [
     title: "Pet Shop App",
     img: PetShopApp,
     desc: "The Pet Shop App boasts a playful design, featuring a white background that ensures a clean and fresh look. The app incorporates rounded elements in various soft colors, adding a touch of vibrancy and warmth. Vector illustrations of animal paws and various pet icons are used throughout the interface, making it easy for users to identify products for different types of pets. The dominant orange color accentuates key features and elements, creating an inviting and lively atmosphere that appeals to animal lovers. This design aims to create a pleasant shopping experience for pet enthusiasts.",
+  },
+  {
+    id: 13,
+    title: "Fashion Web Shop",
+    img: Fashion,
+    desc: "The Fashion Web Shop features a sleek and modern design with a clean white background that allows the elements to stand out sharply. The title of the featured product is displayed prominently in a bold, dark turquoise color, matching the call-to-action button just below it. This color choice contrasts effectively against the white background, ensuring the product name catches the viewer's attention immediately. Below the title, a concise description of the product is written in a deep black font, providing a clear and easy-to-read summary that highlights the key features and benefits.",
   },
   {
     id: 2,
@@ -75,7 +82,13 @@ const items = [
     id: 10,
     title: "Video Game App",
     img: VideoGame,
-    desc: "The design of the Video Game App features a sleek black background that provides a modern and immersive experience. Text and key elements are highlighted with bright, attention-grabbing colors to ensure readability and engagement. All interface elements are presented in a clean and straightforward manner, making them easily recognizable and user-friendly. Important features and calls to action are accentuated with vibrant green and blue accents, drawing focus and enhancing the overall visual appeal of the app.",
+    desc: "The design of the Video Game App features a sleek black background that provides a modern and immersive experience. Text and key elements are highlighted with bright, attention-grabbing colors to ensure readability and engagement. All interface elements are presented in a clean and straightforward manner, making them easily recognizable and user-friendly. Important features and calls to action are accentuated with vibrant green and blue accents, drawing focus and enhancing the overall visual appeal of the app. The careful balance of dark and vibrant colors creates a visually striking contrast that ensures important elements are easily discernible in various lighting conditions.",
+  },
+  {
+    id: 12,
+    title: "Weather App",
+    img: WeatherApp,
+    desc: "The Weather App is designed in subtle blue tones that align with the winter season, enhancing the overall theme. The digital art clearly depicts snowy weather, with serene images of snowflakes and wintry landscapes that change based on real-time conditions. It features a diagram displaying the hourly forecast for the day and clear icons in a complementary blue hue that match the digital art, with each icon accurately representing the weather conditions. Additionally, a 7-day forecast provides a quick overview of upcoming weather patterns.",
   },
   {
     id: 11,
@@ -86,17 +99,17 @@ const items = [
 ];
 const containerStyle = {
   6: {
-    border: "2px solid #ebfcff",
+    border: "1px solid #e8f5fa",
     height: "80%",
     marginTop: "10px",
   },
 
   2: {
-    border: "2px solid #ebfcff",
+    border: "1px solid #f0f0f0",
     marginTop: "30px",
   },
-  7: { marginTop: "33px" },
-  8: { marginTop: "33px" },
+  7: { marginTop: "33px", border: "1px solid #f0f0f0" },
+  8: { marginTop: "33px", border: "1px solid #f0f0f0" },
   4: { marginTop: "-30px" },
 };
 
