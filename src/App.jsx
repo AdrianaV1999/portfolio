@@ -22,7 +22,6 @@ const App = () => {
 
   return (
     <div>
-      <Cursor />
       <section id="Home" className="section">
         <Navbar />
         <Hero />

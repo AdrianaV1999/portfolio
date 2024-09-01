@@ -39,7 +39,7 @@ const items = [
     id: 5,
     title: "Pet Shop App",
     img: PetShopApp,
-    desc: "The Pet Shop App boasts a playful design, featuring a white background that ensures a clean and fresh look. The app incorporates rounded elements in various soft colors, adding a touch of vibrancy and warmth. Vector illustrations of animal paws and various pet icons are used throughout the interface, making it easy for users to identify products for different types of pets. The dominant orange color accentuates key features and elements, creating an inviting and lively atmosphere that appeals to animal lovers. This design aims to create a pleasant shopping experience for pet enthusiasts.",
+    desc: "The Pet Shop App boasts a playful design, featuring a white background that ensures a clean and fresh look. The app incorporates rounded elements in various soft colors, adding a touch of vibrancy and warmth. Vector illustrations of animal paws and various pet icons are used throughout the interface, making it easy for users to identify products for different types of pets. The dominant orange color accentuates key features and elements, creating an inviting and lively atmosphere that appeals to animal lovers.",
   },
   {
     id: 13,
