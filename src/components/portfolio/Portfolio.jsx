@@ -101,7 +101,7 @@ const containerStyle = {
   6: {
     border: "1px solid #e8f5fa",
     height: "80%",
-    marginTop: "10px",
+    marginTop: "15px",
   },
 
   2: {
