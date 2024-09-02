@@ -11,10 +11,11 @@ const Contact = () => {
   const [success, setSuccess] = useState(false);
   const [showImage, setShowImage] = useState(false);
   const [showForm, setShowForm] = useState(false);
+  const isMobilee = window.innerWidth <= 750;
   const style = {
     color: "#FFDBFA",
+    fontSize: isMobilee ? "14.5px" : "16.5px",
   };
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -89,7 +90,7 @@ const Contact = () => {
             </b>
           </h1>
           <div className="item">
-            <h2>Mail</h2>
+            <h2>Email</h2>
             <p>
               <span style={{ color: "#ffffff" }}>adrianav12899@gmail.com</span>
             </p>

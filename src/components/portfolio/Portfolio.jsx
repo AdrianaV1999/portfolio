@@ -106,11 +106,11 @@ const containerStyle = {
 
   2: {
     border: "1px solid #f0f0f0",
-    marginTop: "30px",
+    marginTop: "27px",
   },
   7: { marginTop: "33px", border: "1px solid #f0f0f0" },
   8: { marginTop: "33px", border: "1px solid #f0f0f0" },
-  4: { marginTop: "-30px" },
+  4: { marginTop: "-36px" },
 };
 
 const Single = ({ item }) => {
